@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 from scipy.stats import poisson
 
-selecoes=pd.read_excel('/dados/DadosCopaDoMundoQatar2022.xlsx', sheet_name='selecoes', index_col=0)
-jogos=pd.read_excel('/dados/DadosCopaDoMundoQatar2022.xlsx', sheet_name='jogos')
+selecoes=pd.read_excel('dados/DadosCopaDoMundoQatar2022.xlsx', sheet_name='selecoes', index_col=0)
+jogos=pd.read_excel('dados/DadosCopaDoMundoQatar2022.xlsx', sheet_name='jogos')
 
 fifa=selecoes['PontosRankingFIFA'] #transformação inear de escala numerica
 a, b=min(fifa), max(fifa)
@@ -17,7 +17,7 @@ forca
 def MediasPoisson(selecao1, selecao2):
   forca1=forca[selecao1]
   forca2=forca[selecao2]
-  mgols=2.75 #meia de gols definida
+  mgols=2.75 #media de gols definida
   l1=mgols*forca1/(forca1+forca2)
   l2=mgols-l1
   return [l1, l2]
