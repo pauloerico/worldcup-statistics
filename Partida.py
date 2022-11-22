@@ -85,7 +85,7 @@ def ProbabilidadesPartida(selecao1, selecao2):
 
 st.set_page_config(
     page_title = 'Predições de Jogos da Copa do Mundo',
-    page_icon = '⚽',
+    page_icon = '⚽'
 )
 
 st.markdown("# 🏆 Copa do Mundo Qatar 2022") 
