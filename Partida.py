@@ -123,7 +123,7 @@ st.markdown('---')
 st.markdown("## 🌍 Probabilidades dos Jogos da Copa") 
 
 jogoscopa=pd.read_excel('dados/outputEstimativasJogosCopa.xlsx', index_col=0)
-st.table(jogoscopa[['grupo', 'selecao1', 'selecao2', 'Vitória', 'Empate', 'Derrota']])
+st.table(jogoscopa[['grupo', 'seleção1', 'seleção2', 'Vitória', 'Empate', 'Derrota']])
 
 st.markdown('---')
 st.markdown('Trabalho desenvolvido no Minicurso FLAI Data Science na Copa do Mundo!')
