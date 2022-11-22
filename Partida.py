@@ -12,7 +12,6 @@ fa, fb=0.15, 1 #definido melhor selecao com pontuação cerca de 6x maior que pi
 b1=(fb-fa)/(b-a)
 b0=fb-b*b1
 forca=b0+b1*fifa
-forca
 
 def MediasPoisson(selecao1, selecao2):
   forca1=forca[selecao1]
