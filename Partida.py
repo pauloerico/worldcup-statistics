@@ -122,7 +122,7 @@ def aux(x):
 # st.table(matriz.applymap(aux))
 
 fig, ax = plt.subplots()
-sns.heatmap(matriz.reset_index(drop=True), ax=ax, cmap = 'Blues', annot = 100*matriz , fmt=".2f", xticklabels = lista07, yticklabels = lista07) 
+sns.heatmap(matriz.reset_index(drop=True), ax=ax, cmap = 'Blues', annot = 100*matriz , fmt=".2f", xticklabels = nomes, yticklabels = nomes) 
 ax.tick_params(axis='both', which='major', labelsize=10, labelbottom = False, bottom=False, top = True, labeltop=True )
 ax.xaxis.set_label_position('top')
 ax.set_xlabel('Gols ' + selecao2, fontsize=15, color = 'gray')	
