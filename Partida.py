@@ -129,6 +129,7 @@ ax.set_xlabel('Gols ' + selecao2, fontsize=15, color = 'gray')
 ax.set_ylabel('Gols ' + selecao1, fontsize=15, color = 'gray')	
 ax.set_xticklabels(ax.get_xticklabels(), rotation = 0, fontsize = 8, color = 'gray')
 ax.set_yticklabels(ax.get_yticklabels(), rotation = 0, fontsize = 8, color = 'gray' )
+st.write(fig)
 
 st.markdown('---')
 st.markdown("## 🌍 Probabilidades dos Jogos da Copa") 
