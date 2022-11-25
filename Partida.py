@@ -89,6 +89,7 @@ st.set_page_config(
     page_icon = '⚽'
 )
 
+st.markdown([![LinkedIn](https://img.shields.io/badge/Linkedin-%230077B5.svg?style=plastic&logo=appveyor&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/paulo-webdev/)) 
 st.markdown("# 🏆 Copa do Mundo Qatar 2022") 
 st.markdown("## ⚽ Probabilidades das Partidas")
 
