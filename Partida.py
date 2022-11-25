@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from scipy.stats import poisson
 
 selecoes=pd.read_excel('dados/DadosCopaDoMundoQatar2022.xlsx', sheet_name='selecoes', index_col=0)
