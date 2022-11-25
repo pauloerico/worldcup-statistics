@@ -117,7 +117,16 @@ st.markdown("## 📊 Probabilidades dos Placares")
 def aux(x):
   return f'{str(round(100*x,1))}%'
 
-st.table(matriz.applymap(aux))
+# st.table(matriz.applymap(aux))
+
+fig, ax = plt.subplots()
+sns.heatmap(matriz.reset_index(drop=True), ax=ax, cmap = 'Blues', annot = 100*matriz , fmt=".2f", xticklabels = lista07, yticklabels = lista07) 
+ax.tick_params(axis='both', which='major', labelsize=10, labelbottom = False, bottom=False, top = True, labeltop=True )
+ax.xaxis.set_label_position('top')
+ax.set_xlabel('Gols ' + selecao2, fontsize=15, color = 'gray')	
+ax.set_ylabel('Gols ' + selecao1, fontsize=15, color = 'gray')	
+ax.set_xticklabels(ax.get_xticklabels(), rotation = 0, fontsize = 8, color = 'gray')
+ax.set_yticklabels(ax.get_yticklabels(), rotation = 0, fontsize = 8, color = 'gray' )
 
 st.markdown('---')
 st.markdown("## 🌍 Probabilidades dos Jogos da Copa") 
